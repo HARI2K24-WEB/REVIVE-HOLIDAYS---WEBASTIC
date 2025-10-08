@@ -15,25 +15,26 @@
 <body>
 
   <!-- Header -->
-  <header id="head">
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="logo navbar-brand d-flex align-items-center">
-        <ul>
-          <img src="assets/revivelogo.jpg" alt="">
-          <a href="index.php">Revive Holidays</a>
+   <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="assets/revivelogo.jpg" alt="Revive Holidays Logo">
+        <span>Revive Holidays</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#aboutus">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#packages">Packages</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
         </ul>
       </div>
-      <div class="collapse navbar-collapse justify-content-end">
-        <ul class="nav-links navbar-nav">
-          <a href="#head">Home</a>
-          <a href="#about">About US</a>
-          <a href="#packages">Packages</a>
-          <a href="#gallery">Gallery</a>
-          <a href="#contact">Contact</a>
-        </ul>
-      </div>
-      </nav>
-  </header>
+    </div>
+  </nav>
 
   <!-- Packages Section -->
   <section id="packages">
