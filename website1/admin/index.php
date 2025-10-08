@@ -16,8 +16,8 @@ if (!isset($_SESSION['admin'])) {
 <body>
   <h1>Admin Dashboard</h1>
   <nav>
-    <a href="packages.php">Manage Packages</a> |
-    <a href="contacts.php">View Contacts</a>
+    <a href="packages.php" style="color:white;">Manage Packages</a> |
+    <a href="contacts.php" style="color:white;">View Contacts</a>
     <a href="logout.php" style="float:right; color:red;">Logout</a>
 
   </nav>
