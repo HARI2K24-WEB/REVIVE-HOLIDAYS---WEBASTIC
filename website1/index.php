@@ -52,7 +52,7 @@
 
         <!-- Image Section -->
         <div class="col-lg-6 text-center mt-4 mt-lg-0">
-          <img src="your-image.jpg" alt="Beach view" class="hero-img">
+          <img src="assets/hero1.jpg" alt="Beach view" class="hero-img">
         </div>
       </div>
     </div>
