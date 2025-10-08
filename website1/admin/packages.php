@@ -117,12 +117,12 @@ if (isset($_POST['update_package'])) {
       width: 100%;
       border-collapse: collapse;
       margin-top: 30px;
-      background: #fff;
+      background: #222;
       border-radius: 10px;
       overflow: hidden;
     }
     th, td {
-      border: 1px solid #ddd;
+      border: 1px solid #ccc;
       padding: 12px;
       text-align: center;
     }
@@ -208,6 +208,8 @@ if (isset($_GET['edit'])) {
     </tr>
   <?php endwhile; ?>
 </table>
-
+<a href="admin_packages_pdf.php" class="btn btn-primary" style="color:black;" target="_blank">
+    📄 Download All Packages (PDF)
+</a>
 </body>
 </html>
