@@ -15,23 +15,49 @@
 <body>
 
   <!-- Header -->
-  <header id="head">
-      <div class="logo">
-        <ul>
-          <img src="assets/revivelogo.jpg" alt="">
-          <a href="index.php">Revive Holidays</a>
+   <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="assets/revivelogo.jpg" alt="Revive Holidays Logo">
+        <span>Revive Holidays</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="#navbar">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#aboutus">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#packages">Packages</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </div>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#head">Home</a></li>
-          <li><a href="#about">About US</a></li>
-          <li><a href="#packages">Packages</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-  </header>
+    </div>
+  </nav>
+  <!-- Hero section -->
+   <section class="hero-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Text Content -->
+        <div class="col-lg-6">
+          <h1 class="hero-title">
+            Discover the <br> Thrill of the <br> Unknown
+          </h1>
+          <p class="hero-text">
+            Experience unforgettable adventures with our curated travel packages. 
+            From tropical paradises to mountain peaks, we make your dream destinations reality.
+          </p>
+        </div>
+
+        <!-- Image Section -->
+        <div class="col-lg-6 text-center mt-4 mt-lg-0 d-flex">
+          <img src="assets/hero1.jpg" alt="Beach view" class="hero-img">
+          <img src="assets/hero2.jpg" alt="Beach view" class="hero-img1">
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Packages Section -->
   <section id="packages">
