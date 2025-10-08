@@ -7,18 +7,29 @@
   <title>Travel Site</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </head>
 <body>
 
   <!-- Header -->
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#packages">Packages</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+  <header id="head">
+    <div class="navbar">
+      <div class="logo">
+        <ul>
+          <li><img src="assets/revivelogo.jpg" alt=""></li>
+          <a href="index.php">Revive Holidays</a>
+        </ul>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#head">Home</a></li>
+          <li><a href="#about">About US</a></li>
+          <li><a href="#packages">Packages</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <!-- Packages Section -->
@@ -65,5 +76,6 @@
   </section>
 
 </body>
+
 <script src="script.js"></script>
 </html>
