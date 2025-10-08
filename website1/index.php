@@ -16,20 +16,22 @@
 
   <!-- Header -->
   <header id="head">
-      <div class="logo">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="logo navbar-brand d-flex align-items-center">
         <ul>
           <img src="assets/revivelogo.jpg" alt="">
           <a href="index.php">Revive Holidays</a>
         </ul>
       </div>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#head">Home</a></li>
-          <li><a href="#about">About US</a></li>
-          <li><a href="#packages">Packages</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#contact">Contact</a></li>
+      <div class="collapse navbar-collapse justify-content-end">
+        <ul class="nav-links navbar-nav">
+          <a href="#head">Home</a>
+          <a href="#about">About US</a>
+          <a href="#packages">Packages</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#contact">Contact</a>
         </ul>
+      </div>
       </nav>
   </header>
 

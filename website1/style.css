@@ -12,6 +12,7 @@ header {
   padding: 15px 60px;
   background: white;
   color: #000;
+  width: 100%;
 }
 
 header a{
@@ -29,14 +30,19 @@ header a{
   align-items: center;
   flex-direction: row;
 }
-
+.nav-links{
+  text-decoration: none;
+  justify-content: end;
+}
 nav a {
   color: #000;
   margin: 0 15px;
   text-decoration: none;
   font-weight: bold;
 }
-
+.collapse{
+  justify-content: end;
+}
 section {
   padding: 60px 10%;
   text-align: center;
