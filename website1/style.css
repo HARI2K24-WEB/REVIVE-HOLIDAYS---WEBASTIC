@@ -4,6 +4,7 @@ body {
   background: #111;
   color: #fff;
 }
+/*Header*/
 .navbar-brand img {
       height: 50px;
       width: 50px;
@@ -22,6 +23,7 @@ body {
       color: #ff9900;
     }
 
+/*Hero section*/
 .hero-section {
       background: linear-gradient(135deg, #ffa500, yellow);
       color: #000;
@@ -46,6 +48,8 @@ body {
 
     /* Hero Image Styling */
     .hero-img {
+      position: relative;
+      z-index: 1;
       border-radius: 20px;
       box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
       width: 50%;
@@ -54,10 +58,10 @@ body {
       rotate: -10deg;
     }
     .hero-img1{
+      border-radius: 20px;
+      rotate: -10deg;
       width: 50%;
-      display: flex;
       z-index: 0;
-      
     }
 
     /* Bounce Keyframes */
