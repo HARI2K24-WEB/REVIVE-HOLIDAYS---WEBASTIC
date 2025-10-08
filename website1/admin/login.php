@@ -1,7 +1,30 @@
 <?php
+// --- Session Configuration ---
+ini_set('session.cookie_lifetime', 0);      // Session expires when browser closes
+ini_set('session.gc_maxlifetime', 900);     // Max session lifetime = 15 min
 session_start();
+
+// --- Session Timeout (15 minutes) ---
+$timeout_duration = 900;
+
+if (isset($_SESSION['LAST_ACTIVITY']) && (time() - $_SESSION['LAST_ACTIVITY']) > $timeout_duration) {
+    // Session expired
+    session_unset();
+    session_destroy();
+    header("Location: admin_login.php?timeout=1");
+    exit();
+}
+
+// If admin already logged in and visits login page, redirect directly to dashboard
+if (isset($_SESSION['admin'])) {
+    header("Location: index.php");
+    exit();
+}
+
+// --- Database Connection ---
 include '../db.php';
 
+// --- Login Handler ---
 if (isset($_POST['login'])) {
     $username = $conn->real_escape_string($_POST['username']);
     $password = $_POST['password'];
@@ -11,10 +34,15 @@ if (isset($_POST['login'])) {
     if ($result->num_rows === 1) {
         $user = $result->fetch_assoc();
 
+        // Verify password hash
         if (password_verify($password, $user['password_hash'])) {
+            // ✅ Create a fresh session
+            session_regenerate_id(true); // Prevent session fixation
             $_SESSION['admin'] = $user['username'];
+            $_SESSION['LAST_ACTIVITY'] = time(); // Start tracking activity
+
             header("Location: index.php");
-            exit;
+            exit();
         } else {
             $error = "Invalid password!";
         }
@@ -32,7 +60,7 @@ if (isset($_POST['login'])) {
   <style>
     body {
       background: linear-gradient(135deg, #ffa600, #ff6200);
-      font-family: Arial;
+      font-family: Arial, sans-serif;
       display: flex;
       align-items: center;
       justify-content: center;
