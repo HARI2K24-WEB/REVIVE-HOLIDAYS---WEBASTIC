@@ -48,9 +48,16 @@ body {
     .hero-img {
       border-radius: 20px;
       box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-      width: 100%;
+      width: 50%;
       height: auto;
       animation: bounce 3s ease-in-out infinite;
+      rotate: -10deg;
+    }
+    .hero-img1{
+      width: 50%;
+      display: flex;
+      z-index: 0;
+      
     }
 
     /* Bounce Keyframes */
