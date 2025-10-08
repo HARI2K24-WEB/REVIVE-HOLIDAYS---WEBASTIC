@@ -15,12 +15,12 @@
   <header id="head">
       <div class="logo">
         <ul>
-          <li><img src="assets/revivelogo.jpg" alt=""></li>
+          <img src="assets/revivelogo.jpg" alt="">
           <a href="index.php">Revive Holidays</a>
         </ul>
       </div>
       <nav>
-        <ul>
+        <ul class="nav-links">
           <li><a href="#head">Home</a></li>
           <li><a href="#about">About US</a></li>
           <li><a href="#packages">Packages</a></li>
