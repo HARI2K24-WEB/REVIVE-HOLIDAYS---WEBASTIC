@@ -26,15 +26,37 @@
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#navbar">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="#aboutus">About Us</a></li>
           <li class="nav-item"><a class="nav-link" href="#packages">Packages</a></li>
           <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
+  <!-- Hero section -->
+   <section class="hero-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Text Content -->
+        <div class="col-lg-6">
+          <h1 class="hero-title">
+            Discover the <br> Thrill of the <br> Unknown
+          </h1>
+          <p class="hero-text">
+            Experience unforgettable adventures with our curated travel packages. 
+            From tropical paradises to mountain peaks, we make your dream destinations reality.
+          </p>
+        </div>
+
+        <!-- Image Section -->
+        <div class="col-lg-6 text-center mt-4 mt-lg-0">
+          <img src="your-image.jpg" alt="Beach view" class="hero-img">
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Packages Section -->
   <section id="packages">
