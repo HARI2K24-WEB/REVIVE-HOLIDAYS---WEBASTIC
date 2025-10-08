@@ -149,4 +149,20 @@ form button {
 #prev { left: 0; }
 #next { right: 0; }
 
+/*Contact Section */
+#contactform{
+  color: aliceblue;
+}
+#contact input:focus, 
+#contact textarea:focus {
+  color: #fff !important;
+  border-color: #ffc107 !important;
+  box-shadow: 0 0 10px rgba(255, 193, 7, 0.5);
+}
 
+#contact button:hover {
+  background-color: #ffda3a !important;
+  transform: scale(1.05);
+  transition: all 0.2s ease-in-out;
+}
+/*Contact Section End*/
