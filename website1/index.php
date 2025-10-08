@@ -13,7 +13,6 @@
 
   <!-- Header -->
   <header id="head">
-    <div class="navbar">
       <div class="logo">
         <ul>
           <li><img src="assets/revivelogo.jpg" alt=""></li>
@@ -29,7 +28,6 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-    </div>
   </header>
 
   <!-- Packages Section -->
