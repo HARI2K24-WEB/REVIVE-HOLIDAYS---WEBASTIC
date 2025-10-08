@@ -12,13 +12,21 @@
 
   <!-- Header -->
   <header>
-    <nav>
-      <ul>
-        <li><a href="#packages">Packages</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="navbar">
+      <div class="logo">
+        <ul>
+          <li>
+          </li>
+        </ul>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#packages">Packages</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <!-- Packages Section -->
