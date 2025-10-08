@@ -12,7 +12,7 @@
 <body>
 
   <!-- Header -->
-  <header>
+  <header id="head">
     <div class="navbar">
       <div class="logo">
         <ul>
@@ -22,6 +22,8 @@
       </div>
       <nav>
         <ul>
+          <li><a href="#head">Home</a></li>
+          <li><a href="#about">About US</a></li>
           <li><a href="#packages">Packages</a></li>
           <li><a href="#gallery">Gallery</a></li>
           <li><a href="#contact">Contact</a></li>

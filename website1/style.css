@@ -17,6 +17,16 @@ header a{
   text-decoration: none;
   color: black;
 }
+.logo img{
+  width: 3rem;
+  border-radius: 50%;
+}
+.navbar,.logo ul,nav ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
 
 nav a {
   color: #000;
